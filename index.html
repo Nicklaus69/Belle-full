@@ -1,233 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="description"
-      content="Belle-Full a food subscription that will make you eat healthy again, 365 days per year. It's tailored to your personal tastes and nutritional needs."
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial=scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
 
-    <!-- Always include this line of code!!! -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="icon" href="img/favicon.png" />
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
-    <link rel="manifest" href="manifest.webmanifest" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/queries.css" />
-
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule=""
-      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
-    ></script>
-
-    <script
-      defer
-      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
-    ></script>
-    <script defer src="js/script.js"></script>
-
-    <title>Belle-Full &mdash; Never cook again!</title>
-  </head>
-  <body>
-    <header class="header">
-      <a href="#">
-        <img
-          class="logo"
-          alt="Omnifood logo"
-          src="img/logos/omnifood-logo.png"
-        />
-      </a>
-
-      <nav class="main-nav">
-        <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#how">How it works</a></li>
-          <li><a class="main-nav-link" href="meals.html">Meals</a></li>
-
-          <li>
-            <a class="main-nav-link" href="#testimonials">Testimonials</a>
-          </li>
-          <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
-          <li><a class="main-nav-link nav-cta" href="#cta">Try for free</a></li>
-        </ul>
-      </nav>
-
-      <!-- Moblie nav -->
-      <button class="btn-mobile-nav">
-        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
-      </button>
-    </header>
-
-
-      <main>
-        <section class="section-hero">
-          <div class="hero">
-            <div class="hero-text-box">
-              <h1 class="heading-primary">
-                A healthy meal delivered to your door, every single day
-              </h1>
-              <p class="hero-description">
-                Welcome to Belle Full Your ultimate dining destination where we
-                turn your mealtime into a culinary celebration! Leave the pots
-                and pans behind and let us take the reins as we craft delicious
-                dishes that will tantalize your taste buds and leave you craving
-                more.
-              </p>
-              <a href="#cta" class="btn btn--full margin-right-sm"
-                >Start eating well</a
-              >
-
-              <a href="#how" class="btn btn--outline">Learn more &darr;</a>
-              <div class="delivered-meals">
-                <div class="delivered-imgs">
-                  <img
-                    src="img/customers/customer-1.jpg"
-                    alt="Customer photo"
-                  />
-                  <img
-                    src="img/customers/customer-2.jpg"
-                    alt="Customer photo"
-                  />
-                  <img
-                    src="img/customers/customer-3.jpg"
-                    alt="Customer photo"
-                  />
-                  <img
-                    src="img/customers/customer-4.jpg"
-                    alt="Customer photo"
-                  />
-                  <img
-                    src="img/customers/customer-5.jpg"
-                    alt="Customer photo"
-                  />
-                  <img
-                    src="img/customers/customer-6.jpg"
-                    alt="Customer photo"
-                  />
+    <title>Belle Full Restaurant</title>   
+</head>
+<body>
+    <div class="menu">
+        <div class="heading">
+            <h1>Belle Full Restaurant</h1>
+            <h3>&mdash;Menu&mdash;</h3>
+        </div>
+        <div class="food-items">
+            <img src="Jollof.jpg">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Jollof rice</h5>
+                    <h5 class="price">CFA 5000</h5>
                 </div>
-                <p class="delivered-text">
-                  <span>250,000+</span> meals delivered last year!
-                </p>
-              </div>
-            </div>
-            <div class="hero-img-box">
-              <picture>
-                <source srcset="img/hero.webp" type="image/webp" />
-                <source srcset="img/hero-min.png" type="image/png" />
-
-                <img
-                  src="img/hero-min.png"
-                  class="hero-img"
-                  alt="Woman enjoying food, meals in storage container, and food bowls on a table"
-                />
-              </picture>
-            </div>
-          </div>
-        </section>
-
-        <section class="section-featured">
-          <div class="container">
-            <h2 class="heading-featured-in">As featured in</h2>
-            <div class="logos">
-              <img src="img/logos/techcrunch.png" alt="Techcrunch logo" />
-              <img
-                src="img/logos/business-insider.png"
-                alt="Business Insider logo"
-              />
-              <img
-                src="img/logos/the-new-york-times.png"
-                alt="The New York Times logo"
-              />
-              <img src="img/logos/forbes.png" alt="Forbes logo" />
-              <img src="img/logos/usa-today.png" alt="USA Today logo" />
-            </div>
-          </div>
-        </section>
-
-
-        <section class="section-how" id="how">
-          <div class="container">
-            <span class="subheading">How it works</span>
-            <h2 class="heading-secondary">
-              Your daily dose of health in 3 simple steps
-            </h2>
-          </div>
-  
-          <section class="container grid grid--2-cols grid--center-v">
-            <!-- STEP 01 -->
-            <div class="step-text-box">
-              <p class="step-number">01</p>
-              <h3 class="heading-tertiary">
-                Tell us what you like (and what not)
-              </h3>
-              <p class="step-description">
-                Never again waste time thinking about what to eat! Belle-Full will
-                create a 100% personalized meal just for you. It makes sure you
-                get all the nutrients and vitamins you need, no matter what diet
-                you follow!
-              </p>
+                <p>stewed jollof with beef and shredded cabbage.</p>
+                <button>Add to cart</button>
             </div>
 
-            <div class="step-img-box">
-              <img
-                src="img/app/app-screen-1.png"
-                class="step-img"
-                alt="iPhone app
-              preferences selection screen"
-              />
+        </div>
+        <div class="food-items">
+            <img src="achu.jpg">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Achu</h5>
+                    <h5 class="price">CFA 10000</h5>
+                </div>
+                <p>pounded cocoyams with yellow soup and meat.</p>
+                <button>Add to cart</button>
             </div>
 
-            <!-- STEP 02 -->
-            <div class="step-img-box">
-              <img
-                src="img/app/app-screen-2.png"
-                class="step-img"
-                alt="iPhone app
-              meal approving plan screen"
-              />
+    </div>
+    <div class="food-items">
+        <img src="garri and eru.jpg">
+        <div class="details">
+            <div class="details-sub">
+                <h5>garri and eru</h5>
+                <h5 class="price">CFA 10000</h5>
             </div>
-            <div class="step-text-box">
-              <p class="step-number">02</p>
-              <h3 class="heading-tertiary">Approve your Daily meal plan</h3>
-              <p class="step-description">
-                At Belle Full, we believe in giving you control over your dining
-                experience. Each day, you have the opportunity to review and
-                approve your meal selections. Enjoy a personalized dining
-                experience every day, tailored just for you.
-              </p>
-               <!-- STEP 03 -->
-          <div class="step-text-box">
-            <p class="step-number">03</p>
-            <h3 class="heading-tertiary">Receive meals at convenient time</h3>
-            <p class="step-description">
-              Best chefs in town will cook your selected meal every day, and we
-              will deliver it to your door whenever works best for you. You can
-              change delivery schedule and address daily!
-            </p>
-          </div>
-          <div class="step-img-box">
-            <img
-              src="img/app/app-screen-3.png"
-              class="step-img"
-              alt="iPhone app
-            delivery screen"
-            />
-          </div>
+            <p>cooked yellow cassava and eru leaves with meat.</p>
+            <button>Add to cart</button>
+        </div>
+
+    </div>    
+    <div class="food-items">
+        <img src="nkwacoco.jpg">
+        <div class="details">
+            <div class="details-sub">
+                <h5>Nkwacoco and banga sauce</h5>
+                <h5 class="price">CFA 10000</h5>
             </div>
-          </section>
-      </main>
-  </body>
-</html>
+            <p>grounded cocoyams with palmed oil and beef skin.</p>
+            <button>Add to cart</button>
+        </div>
+
+    </div> 
+    <div class="food-items">
+        <img src="okok.jpg">
+        <div class="details">
+            <div class="details-sub">
+                <h5>OKOK</h5>
+                <h5 class="price">CFA 5000</h5>
+            <p>cooked eru leaves with palm oil and boiled cassava.</p>
+            <button>Add to cart</button>
+        </div>
+
+    </div> 
+    <div class="food-items">
+        <img src="EgusiSoup.jpg">
+        <div class="details">
+            <div class="details-sub">
+                <h5>EGUSI SOUP AND FUFU</h5>
+                <h5 class="price">CFA 10000</h5>
+            <p>cooked egusi with water fufu and shrimp.</p>
+            <button>Add to cart</button>
+        </div>
+
+    </div>             
+</body>
+</html>    
