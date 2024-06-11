@@ -19,31 +19,76 @@ btnNavEl.addEventListener("click", function () {
 ///////////////////////////////////////////////////////////
 // Smooth scrolling animation xxxxxx
 
-const allLinks = document.querySelectorAll("a:link");
+// const allLinks = document.querySelectorAll("a:link");
+
+// allLinks.forEach(function (link) {
+//   link.addEventListener("click", function (e) {
+//     e.preventDefault();
+//     const href = link.getAttribute("href");
+
+    // Scroll back to top
+    // if (href === "#")
+    //   window.scrollTo({
+    //     top: 0,
+    //     behavior: "smooth",
+    //   });
+
+    // Scroll to other links
+    // if (href !== "#" && href.startsWith("#")) {
+    //   const sectionEl = document.querySelector(href);
+    //   sectionEl.scrollIntoView({ behavior: "smooth" });
+    // }
+
+    // Close mobile naviagtion
+//     if (link.classList.contains("main-nav-link"))
+//       headerEl.classList.toggle("nav-open");
+//   });
+// });
+
+
+const allLinks = document.querySelectorAll("a");
 
 allLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
-    e.preventDefault();
     const href = link.getAttribute("href");
+    console.log("Clicked link:", href);
 
-    // Scroll back to top
-    if (href === "#")
+    // Check if the link is internal (starts with "#" and not just "#")
+    if (href.startsWith("#") && href.length > 1) {
+      e.preventDefault();
+      const sectionEl = document.querySelector(href);
+      console.log("Scrolling to section:", sectionEl);
+      if (sectionEl) {
+        sectionEl.scrollIntoView({ behavior: "smooth" });
+      }
+      
+      // Close mobile navigation
+      if (link.classList.contains("main-nav-link")) {
+        console.log("Toggling navigation");
+        headerEl.classList.toggle("nav-open");
+      }
+    } else if (href === "#") {
+      e.preventDefault();
+      console.log("Scrolling to top");
       window.scrollTo({
         top: 0,
         behavior: "smooth",
       });
 
-    // Scroll to other links
-    if (href !== "#" && href.startsWith("#")) {
-      const sectionEl = document.querySelector(href);
-      sectionEl.scrollIntoView({ behavior: "smooth" });
+      // Close mobile navigation
+      if (link.classList.contains("main-nav-link")) {
+        console.log("Toggling navigation");
+        headerEl.classList.toggle("nav-open");
+      }
+    } else {
+      // Allow default behavior for external links
+      console.log("Navigating to another page");
     }
-
-    // Close mobile naviagtion
-    if (link.classList.contains("main-nav-link"))
-      headerEl.classList.toggle("nav-open");
   });
 });
+
+
+
 
 ///////////////////////////////////////////////////////////
 // Sticky navigation
