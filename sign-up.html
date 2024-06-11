@@ -52,35 +52,45 @@
                 first meal is on us!
               </p>
 
-              <form class="cta-form" name="sign-up" netlify>
+              <form action="signup.php" method="post" class="cta-form" name="sign-up" netlify>
                 <div>
-                  <label for="full-name">Full Name</label>
+                  <label for="name">Full Name</label>
                   <input
-                    id="full-name"
+                    id="name"
                     type="text"
                     placeholder="Anya Nicklaus"
-                    name="full-name"
+                    name="name"
                     required
                   />
                 </div>
 
                 <div>
-                  <label for="phone">Contact</label>
+                  <label for="number">Contact</label>
                   <input
-                    id="phone"
+                    id="number"
                     type="tel"
                     placeholder="677*****"
-                    name="phone"
+                    name="number"
                     required
                   />
                 </div>
                 <div>
-                  <label for="Location">Location</label>
+                  <label for="adress">Location</label>
                   <input
-                    id="Location"
+                    id="adress"
                     type="text"
                     placeholder="Messasi"
-                    name="location"
+                    name="adress"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="password">Password</label>
+                  <input
+                    id="password"
+                    type="password"
+                    placeholder="****"
+                    name="password"
                     required
                   />
                 </div>
