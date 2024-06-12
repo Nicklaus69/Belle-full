@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }    
 body{
-    background: #f3f3f3fd;
+    background-color:  #fae5d3;
     font-family: 'Poppins', sans-serif;
 }
 .menu{
@@ -15,12 +15,15 @@ body{
     grid-gap:20px 40px
 }
 .heading{
-    background: #e67e22;
+    /* background: #fdf2e9; */
     color: #fff;
     margin-bottom: 10px;
     padding: 10px 0;
     grid-column: 1/-1;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .heading>h1{
     font-weight: 400;
@@ -31,9 +34,10 @@ body{
 }
 .heading>h3{
     font-weight: 600;
-    font-size: 22px;
+    font-size: 35px;
     letter-spacing: 5px;
     text-transform: uppercase;
+    color: #cf711f;
 
 }
 .food-items{
@@ -234,7 +238,27 @@ header .shopping span{
     margin-bottom: 20px;
 }
 
+.menu-logo{
+    width: 250px;
+}
 
+.back-home{
+    font-size: 25px;
+    text-decoration: none;
+    color: #cf711f;
+    display: block;
+    text-transform: capitalize;
+    margin-right: 40px;
+
+}
+.back-home:hover{
+    font-size: 25px;
+    text-decoration: underline;
+    color: #cf711fb7;
+    display: block;
+    text-transform: capitalize;
+
+}
 
 
 
