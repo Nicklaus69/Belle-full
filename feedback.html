@@ -21,10 +21,10 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/feedback.css" />
-    <!-- <link rel="stylesheet" href="css/queries.css" /> -->
+    <link rel="stylesheet" href="css/queries.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="css/general.css" /> -->
     <!-- <link rel="stylesheet" href="css/style.css" /> -->
 
     <!-- code script -->
@@ -56,8 +56,8 @@
             src="img/logos/omnifood-logo.png"
           />
         </a>
-        <nav>
-          <ul class="main-nav-list">
+        <nav class="main-nav-list">
+          <ul>
             <li><a class="main-nav-link" href="index.html">Home page</a></li>
 
             <li>
@@ -68,33 +68,31 @@
       </header>
     </section>
 
-    <section class="feedback-form">
-      
-      <div class="feedback-container">
-        <h1>Leave Us Feedback</h1>
-       
-          <div class="rating-container">
-           <p>Rate your experience:</p>
-            <div class="stars">
-              <i class="star fas fa-star"></i>
-              <i class="star fas fa-star"></i>
-              <i class="star fas fa-star"></i>
-              <i class="star fas fa-star"></i>
-              <i class="star fas fa-star"></i>
-          </div>
-        </div>
-        <form action="feedback.php" method="post" name="feedback">
-        <div class="comment-container">
-          <p>Leave a comment:</p>
-          <textarea
-            id="comment"
-            rows="6"
-            placeholder="Enter your comment here..."
-          ></textarea>
-          <button id="submit-button">Submit</button>
-        </div>
-      </form>
+    <section>
+      <div class="center">
+      <form action="feedback.php" method="post" name="feedback">
+           <h1>Leave us a Feedback</h1>
+    <div class="margin">
+      <div class="splacing">
+        <label class="text-name" for="name">Name</label>
+        <input type="text" id="name" name="name" required/>
       </div>
+      <div class="feedback-box">
+        <label for="feedback">Feedback</label>
+     <textarea
+     id="feedback"
+     name="feedback"
+     placeholder="Drop a comment" 
+     
+      ></textarea>
+    </div>
+    </div>
+    <div class="btn">
+          <button class="submit-button">Submit</button>
+        </div>
+        </form>
+      </div>
+      
     
     </section>
   </body>
