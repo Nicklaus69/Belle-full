@@ -69,28 +69,33 @@
     </section>
 
     <section class="feedback-form">
+      
       <div class="feedback-container">
         <h1>Leave Us Feedback</h1>
-        <div class="rating-container">
-          <p>Rate your experience:</p>
-          <div class="stars">
-            <i class="star fas fa-star"></i>
-            <i class="star fas fa-star"></i>
-            <i class="star fas fa-star"></i>
-            <i class="star fas fa-star"></i>
-            <i class="star fas fa-star"></i>
+       
+          <div class="rating-container">
+           <p>Rate your experience:</p>
+            <div class="stars">
+              <i class="star fas fa-star"></i>
+              <i class="star fas fa-star"></i>
+              <i class="star fas fa-star"></i>
+              <i class="star fas fa-star"></i>
+              <i class="star fas fa-star"></i>
           </div>
         </div>
+        <form action="feedback.php" method="post" name="feedback">
         <div class="comment-container">
           <p>Leave a comment:</p>
           <textarea
-            id="comment-input"
-            rows="5"
+            id="comment"
+            rows="6"
             placeholder="Enter your comment here..."
           ></textarea>
           <button id="submit-button">Submit</button>
         </div>
+      </form>
       </div>
+    
     </section>
   </body>
 </html>
