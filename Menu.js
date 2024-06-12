@@ -74,7 +74,7 @@ let products = [
 {
   id: 10,
   name: 'Kati-KATI',
-  image: 'kati-kati-cameroon.webp',
+  image: 'img/meals/kati-kati-cameroon.webp',
   price: 1500
 },
 ];
