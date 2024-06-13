@@ -52,7 +52,7 @@
                 first meal is on us!
               </p>
 
-              <form  class="cta-form"  name="sign-up" action="signup.php" method="post" netlify>
+              <form  class="cta-form"  id="signUp" action="" method="post" >
                 <div>
                   <label for="name">Full Name</label>
                   <input
@@ -95,7 +95,7 @@
                   />
                 </div>
 
-                <button class="btn btn--form">Sign up now</button>
+                <button class="btn btn--form" type="submit">Sign up now</button>
 
                 <!-- <input type="checkbox" />
                 <input type="number" /> -->
@@ -109,8 +109,22 @@
           </div>
         </div>
       </section>
+
+      <script>
+        document.getElementById('signUp').addEventListener('submit', function(event) {
+          event.preventDefault(); // Prevents the default form submission
+          // Here you can add any form validation or data handling if needed
+          window.location.href = 'index.html'; // Redirects to index.html
+          alert("yous have succesfully log in");
+        });
+        
+      </script>
       
-      </html>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./mail.js"></script>
+    <script src="js/datab.js"></script> 
+    
       
   </body>
 </html>
