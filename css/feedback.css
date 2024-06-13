@@ -21,12 +21,13 @@
     overflow-x: hidden;
   }
   
-  .header{
+  /* .header{
+    max-width: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-right: 4rem 3rem;
-  }
+    padding-right: 2rem 4rem;
+  } */
 
 
 .logo{
@@ -140,5 +141,4 @@ h1{
     justify-content: center;
   }
   
-
-  
+ 
