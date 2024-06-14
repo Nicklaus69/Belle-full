@@ -46,3 +46,4 @@ function showFeedbackMessage(message) {
   feedbackMessage.textContent = message;
   feedbackMessage.classList.remove('hidden');
 }
+alert("Feedback succesfully sent")
