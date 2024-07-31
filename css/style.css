@@ -14,7 +14,8 @@ body.fade-out {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fdf2e9;
+  /* background-color: #fdf2e9; */
+  background-color: #e7f9eb;
 
   /* Because we want header to be sticky later */
   height: 9.6rem;
@@ -23,7 +24,7 @@ body.fade-out {
 }
 
 .logo {
-  height: 9rem;
+  height: 3.5rem;
 }
 
 /**************************/
@@ -106,7 +107,8 @@ body.fade-out {
 /**************************/
 
 .section-hero {
-  background-color: #fdf2e9;
+  /* background-color: #fdf2e9; */
+  background-color: #e7f9eb;
   padding: 4.8rem 0 9.6rem 0;
 }
 
@@ -169,6 +171,7 @@ body.fade-out {
 
 .section-featured {
   padding: 4.8rem 0 3.2rem 0;
+  /* background-color: #e7f9eb; */
 }
 
 .heading-featured-in {
@@ -198,12 +201,14 @@ body.fade-out {
 
 .section-how {
   padding: 9.6rem 0;
+  /* background-color: #e7f9eb; */
+
 }
 
 .step-number {
   font-size: 8.6rem;
   font-weight: 600;
-  color: #ddd;
+  color: #88e09a;
   margin-bottom: 1.2rem;
 }
 
@@ -237,8 +242,9 @@ body.fade-out {
 
   /* 60% of parent's width */
   padding-bottom: 60%;
+  background-color: #cff3d7;
 
-  background-color: #fdf2e9;
+  
   z-index: -2;
 }
 
@@ -246,7 +252,8 @@ body.fade-out {
   width: 45%;
   padding-bottom: 45%;
   background-color: #fae5d3;
-  z-index: -1;
+  /* background-color: #e7f9eb; */
+  z-index: -1 ;
 }
 
 .step-img {
@@ -342,7 +349,7 @@ body.fade-out {
 /**************************/
 
 .section-testimonials {
-  background-color: #fdf2e9;
+  background-color: #e7f9eb;
   display: grid;
   grid-template-columns: 55fr 45fr;
   align-items: center;
@@ -410,15 +417,18 @@ body.fade-out {
 
   width: 75%;
 }
-
+.meal-icon{
+  color:#08611b;
+  
+}
 .pricing-plan--starter {
   justify-self: end;
-  border: 2px solid #fdf2e9;
+  border: 2px solid #e7f9eb;
   padding: 4.6rem;
 }
 
 .pricing-plan--complete {
-  background-color: #fdf2e9;
+  background-color: #e7f9eb;
   padding: 4.8rem;
   position: relative;
   overflow: hidden;
@@ -484,10 +494,10 @@ body.fade-out {
 }
 
 .feature-icon {
-  color: #e67e22;
+  color: #021305;
   height: 3.2rem;
   width: 3.2rem;
-  background-color: #fdf2e9;
+  background-color: #e7f9eb;
   margin-bottom: 3.2rem;
   padding: 1.6rem;
   border-radius: 50%;
@@ -618,7 +628,8 @@ body.fade-out {
   margin-bottom: 3.2rem;
 }
 .f-logo {
-  height: 6rem;
+  height: 2rem;
+  /* width: 20rem; */
 }
 .social-links {
   list-style: none;
